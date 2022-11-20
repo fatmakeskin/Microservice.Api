@@ -1,0 +1,41 @@
+{
+  "profiles": {
+    "ProductMicroservice": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "MONGO_NAME": "ProductMicroService",
+        "MONGO_URI": "mongodb://localhost:27017"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "http://localhost:5124"
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "MONGO_NAME": "ProductMicroService",
+        "MONGO_URI": "mongodb://localhost:27017"
+      }
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+      "publishAllPorts": true
+    }
+  },
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:27879",
+      "sslPort": 0
+    }
+  }
+}
